@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using LambdaForums.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using LambdaForums.Service;
 
 namespace LambdaForums
 {
@@ -42,6 +43,8 @@ namespace LambdaForums
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddScoped<IForum, ForumService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 

@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
     <PackageReference Include="NuGet.CommandLine" Version="5.0.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
@@ -19,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LambdaForums.Data\LambdaForums.Data.csproj" />
+    <ProjectReference Include="..\LambdaForums.Service\LambdaForums.Service.csproj" />
   </ItemGroup>
 
 </Project>
